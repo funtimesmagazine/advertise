@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/javascript/ftm.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertise</title>
-    <style>
-        
-        </style>
-        
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/javascript/ftm.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertise</title>
+  <style>
+
+  </style>
+
 </head>
+
 <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Connect with FunTimes</h1>
     </div>
   </div>
-    <div class="wrapper"></div>
+  <div class="container">
 
-    <div class="row">
+  <div class="row">
     <div class="col-sm-4">
       <a class="btn btn-success" data-toggle="collapse" data-target="#content">Sponsor an Event $150</a>
     </div>
     <div class="col-sm-4">
-      <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Speak at an Event $500</button> 
+      <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+        aria-expanded="false" aria-controls="multiCollapseExample2">Speak at an Event $500</button>
     </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="collapse multi-collapse" id="content">
-          <div class="card card-body">
-            You will receive:<br>
-           <li>A special mention at our event</li>
-            <li>A Thank You message email blast</li>
-             <li>Payment information (Paypal)</li>
-          </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="collapse multi-collapse" id="content">
+        <div class="card card-body">
+          You will receive:<br>
+          <li>A special mention at our event</li>
+          <li>A Thank You message email blast</li>
+          <li>Payment information (Paypal)</li>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div class="card card-body">
-         <li>Your photo and/or logo on promotional graphics</li>
-         <li>A Thank You message email blast</li>
+    </div>
+    <div class="col-sm-4">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          <li>Your photo and/or logo on promotional graphics</li>
+          <li>A Thank You message email blast</li>
           <li>Payment information</li>
-          </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-3">
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Advertisement Package
               </button>
             </h2>
           </div>
-      
+
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
               <li>$350 Community Sponsor Package</li>
@@ -74,19 +80,49 @@
           </div>
         </div>
       </div>
-      </div>
-      </div>
-      <div>
-      <button type="button" class="btn btn-success">Download our Media Kit</button>
     </div>
-    
-    <h3>Be Featured In Our Magazine</h3>
-    <ul><li>*Form*</li>
-    <li>Click here to set up interview</li>
-    <li>Name*, email*, business name*, phone*, comment etc.</li></ul>
-    <h3>Send Us Feedback</h3>
-    Give us feedback -click-&gt; name, email, comment&nbsp;<br>
-    <h3>Sign Up for our Email Newsletter</h3>
-    click -&gt; email and name<br><br>
+  </div>
+  <div>
+    <button type="button" class="btn btn-success">Download our Media Kit</button>
+  </div>
+</div>
+<div class="container">
+  <h3>Be Featured In Our Magazine</h3>
+ 
+  <form id="fs-frm" name="simple-contact-form" action="https://formspree.io/xaypkvrq"
+  method="post">
+    <fieldset id="fs-frm-inputs">
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="First and Last" required="">
+      </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required="">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="phone-number">Phone Number</label>
+        <input class="form-control" name="telephone" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+      </div>
+      <div class="form-group">
+        <label for="business-name">Name of Business</label>
+        <input type="text" name="name" class="form-control" id="business-name" placeholder="Business">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+      </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Set Up Interview</button>
+  </form>
+</div>
+
+
+  <h3>Send Us Feedback</h3>
+  Give us feedback -click-&gt; name, email, comment&nbsp;<br>
+  <h3>Sign Up for our Email Newsletter</h3>
+  click -&gt; email and name<br><br>
 </body>
+
 </html>
