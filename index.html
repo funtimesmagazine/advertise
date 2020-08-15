@@ -122,13 +122,31 @@
           <textarea class="form-control" name="message" id="message" rows="5"></textarea>
         </div>
       </fieldset>
-      <button type="submit" class="btn btn-primary">Set Up Interview</button>
+      <button type="submit" class="btn btn-success">Set Up Interview</button>
     </form>
   </div>
 <div class="container" id="feedbacksection"></div>
-
   <h3>Send Us Feedback</h3>
-  Give us feedback -click-&gt; name, email, comment&nbsp;<br>
+  
+  <form id="fs-frm" name="simple-contact-form" action="https://formspree.io/xeqrddak" method="post">
+    <fieldset id="fs-frm-inputs">
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" class="form-control" id="fullName" aria-describedby="emailHelp"
+          placeholder="First and Last" required="">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email" required="">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+        <label for="message">Comment</label>
+        <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+      </div>
+    </fieldset>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
 </div>
 <div class="container" id="mailchimp">
   
