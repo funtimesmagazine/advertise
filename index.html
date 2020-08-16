@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -32,61 +32,71 @@
       <h1 class="display-4">Connect with FunTimes</h1>
     </div>
   </div>
-  <div class="container shadow p-4 mb-4 bg-white" id="sponsorspeak">
+  <div class="container shadow p-4 mt-4 mb-4 bg-white" id="sponsorspeak">
     <div class="row">
       <div class="col-sm-3">
-        <a class="btn btn-success btn-block" data-toggle="collapse" data-target="#content">MLK Level $150</a>
-      </div>
-      <div class="col-sm-3">
-        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-          aria-expanded="false">Obama Level $500</button>
-      </div>
-      <div class="col-sm-3">
-        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-          aria-expanded="false">Diamond Level $1000</button>
-      </div>
-      <div class="col-sm-3">
-        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-          aria-expanded="false">Unnamed Level $1000</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="collapse multi-collapse" id="content">
-          <div class="card card-body">
-            You will receive:<br>
-            <li>Sponsorship of our event</li>
-            <li>A special mention at our event</li>
-            <li>A Thank You message email blast</li>
-            <li>
-             <!--Paypal Test Button-->
-             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-success btn-block" type="button" id="dropdownMenuButton1"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MLK Level $150
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="#">Sponsorship of our event</a>
+            <a class="dropdown-item" href="#">A special mention at our event</a>
+            <a class="dropdown-item" href="#">A Thank You message email blast</a>
+            <a class="dropdown-item" href="#">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="TT8NPL2JKQ2CW">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0"
+                  name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
               </form>
-            </li>
+            </a>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div class="card card-body">
-            <li>A speaking opportunity at our event</li>
-            <li>Your photo and/or logo on promotional graphics</li>
-            <li>A Thank You message email blast</li>
-            <li>
-              <!--Paypal Test Button-->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-success btn-block" type="button" id="dropdownMenuButton1"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Obama Level $500
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="#">A speaking opportunity at our event</a>
+            <a class="dropdown-item" href="#">Your photo and/or logo on promotional graphics</a>
+            <a class="dropdown-item" href="#">A Thank You message email blast</a>
+            <a class="dropdown-item" href="#">
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>              
-              </li>
-           
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="CSKVF76R9JJ9U">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0"
+                  name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
               </form>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-success btn-block" type="button" id="dropdownMenuButton1"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Diamond Level $500
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="#">More Details Coming Soon</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-success btn-block" type="button" id="dropdownMenuButton1"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Platinum Level 
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="#">More Details Coming Soon</a>
           </div>
         </div>
       </div>
@@ -98,48 +108,50 @@
         <h3>Advertise</h3>
       </div>
       <div class="col-sm-3">
-        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-          aria-expanded="false">Monthly Starter $350</button>
+        <button class="btn btn-success btn-block" type="button" data-toggle="collapse"
+          data-target="#multiCollapseExample2" aria-expanded="false">Monthly Starter $350</button>
       </div>
       <div class="col-sm-3">
-        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-          aria-expanded="false">Tribe Package $700</button>
+        <button class="btn btn-success btn-block" type="button" data-toggle="collapse"
+          data-target="#multiCollapseExample2" aria-expanded="false">Tribe Package $700</button>
       </div>
       <div class="col-sm-3">
-        <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-          aria-expanded="false">Gold Influence $1500</button>
+        <button class="btn btn-success btn-block" type="button" data-toggle="collapse"
+          data-target="#multiCollapseExample2" aria-expanded="false">Gold Influence $1500</button>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-3">
       </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div class="card card-body">
-            <div class="collapse multi-collapse" id="content">
-              <div class="card card-body">
-                <li>Sponsor virtual event and product giveaway</li>
-                <li>Logo on marketing materials/flyers for event</li>
-                <li>Business shout-out at event</li>
-                <li>Website banner ad</li>
-                <li>
-                 <!--Paypal Test Button-->
-                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    </div>
+    <div class="col-sm-3">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          <div class="collapse multi-collapse" id="content">
+            <div class="card card-body">
+              <li>Sponsor virtual event and product giveaway</li>
+              <li>Logo on marketing materials/flyers for event</li>
+              <li>Business shout-out at event</li>
+              <li>Website banner ad</li>
+              <li>
+                <!--Paypal Test Button-->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                   <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <input type="hidden" name="encrypted"
+                    value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0"
+                    name="submit" alt="PayPal - The safer, easier way to pay online!">
                   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                  </form>
-                </li>
-              </div>
-              </form>
+                </form>
+              </li>
+            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container shadow p-4 mb-4 bg-white" id="mediakit">
+  <div class="container shadow p-4 mt-4 mb-4 bg-white" id="mediakit">
     <h3> For more information, download our Media Kit</h3>
     <div>
       <button type="button" class="btn btn-success">Click Here&nbsp;<i class="fas fa-download fa-lg"></i></button>
@@ -167,12 +179,14 @@
             Yes, send me a Media Kit!
           </label>
         </div>
-        <br></br>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </fieldset>
-    </form>
+        <div>
+          <button type="submit" class="btn btn-success mt-4">Submit</button>
+        </div>
   </div>
-  <div class="container shadow p-4 mb-4 bg-white" id="feedbackform">
+  </fieldset>
+  </form>
+  </div>
+  <div class="container shadow p-4 mt-4 mb-4 bg-white" id="feedbackform">
 
     <form class="p-5" id="fs-frm" name="simple-contact-form" action="https://formspree.io/xaypkvrq" method="post">
       <h3>Comments</h3>
@@ -191,7 +205,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlSelect1">Purpose</label>
-          <select name="options"class="form-control" id="exampleFormControlSelect1">
+          <select name="options" class="form-control" id="exampleFormControlSelect1">
             <option>Send Feedback</option>
             <option>Be Featured In Our Magazine</option>
           </select>
@@ -212,8 +226,8 @@
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
   </div>
-  
-  <div class="container shadow p-4 mb-4 bg-white" id="mailchimp">
+
+  <div class="container shadow p-4 mt-4 mb-4 bg-white" id="mailchimp">
 
     <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -224,7 +238,7 @@
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
         novalidate>
         <div id="mc_embed_signup_scroll">
-          <h2>Sign Up for our Email Newsletter</h2>
+          <h3>Sign Up for our Email Newsletter</h3>
           <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
           <div class="mc-field-group">
             <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
@@ -260,6 +274,11 @@
       type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'MMERGE5'; ftypes[5] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     <!--End mc_embed_signup-->
   </div>
+  <footer class="footer mt-5 p-3">
+    <div class="container">
+      <span class="text">©2020 FunTimes Magazine</span>
+    </div>
+  </footer>
 </body>
 
 </html>
