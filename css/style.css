@@ -1,4 +1,8 @@
-
+.bg
+{
+  width: 100%;
+  z-index: 0;
+}
 .footer {
   padding: 3px;
   background-color:gray;
